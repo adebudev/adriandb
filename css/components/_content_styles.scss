@@ -1,0 +1,88 @@
+$size: 100%;
+$sizp: 20px;
+$color: rgb(24, 238, 138);
+
+@font-face {
+    font-family: 'Acme';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v10/RrQfboBx-C5_XxrBbg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@for $i from 1 through 5 {
+    .cols-#{$i * 10} {
+        width: $i * 10%;
+    }
+}
+@for $i from 1 through 5 {
+    .wdt-#{$i * 10} {
+        width: $i *10px;
+    }
+}
+
+.banner {
+    width: $size;
+    .pres-text {
+        justify-content: center;
+        text-align: center;
+        padding: $sizp;
+        img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        h1 {
+            font-size: 40px;
+            color: $color;
+        }
+        h1:hover {
+            color: rgb(110, 245, 155);
+            display: block;
+            cursor: pointer;
+        }
+        h2 {
+            font-size: 30px;
+            color: $color;
+        }
+        h2:hover {
+            color: rgb(110, 245, 155);
+            display: block;
+            cursor: pointer;
+        }
+        button {
+            width: 150px;
+            height: 35px;
+            border: 0;
+            font-family: 'Acme';
+            transition-duration: 0.4s;
+            cursor: pointer;
+            background-color: white;
+            border: 2px solid $color;
+            border-radius: $sizp;
+        }
+        button:hover {
+            background-color: rgb(110, 245, 155);
+            color: #fff;
+        }
+    }
+}
+.information {
+    width: $size;
+    border: 2px solid $color;
+    border-radius: 10px;
+    .box {
+        margin: 10px
+    }
+    h2 {
+        background-color: rgb(223, 222, 222);
+        color: #2f495e;
+        padding: $sizp;
+        border-radius: 4px;  }
+    h3 {
+        border-bottom: 1px solid rgb(223, 222, 222);
+    }
+    .box-info {
+        margin-left: $sizp;
+        margin-right: $sizp;
+    }
+}

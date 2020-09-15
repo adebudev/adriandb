@@ -1,0 +1,32 @@
+$size: 100%;
+html {
+    width: $size;
+    font-family: 'Acme';
+}
+body { width: auto;
+    overflow-x: hidden;
+    header {
+        width: $size;
+        display: flex;
+        flex-direction: column
+    }
+    main { width: auto;}
+    .container {
+    width: auto;
+    margin: 10px;
+    padding-bottom: 30px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        background-color: rgb(238, 236, 236);
+    }
+}
+
+
+@import "components/content_styles";
+@import "components/nav_styles";
+@import "components/animate_image";
+@import "components/proj_styles";
+@import "components/footer_styles";

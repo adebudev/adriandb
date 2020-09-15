@@ -1,0 +1,53 @@
+$size: 100%;
+$size2: 50px;
+%size-a{
+    width: $size;
+    justify-content: center;
+    display: flex;
+}
+
+.nav { 
+    width: auto;
+    height: $size2;
+    flex-direction: row;
+    color: white;
+    display: flex;
+    position: relative;
+    background-color: #626060;
+    border-radius: 4px;
+    .box-icon {
+        width: $size2;
+        display: flex;
+        padding-right: 20px;
+        padding-top: 5px;
+        a {
+            @extend %size-a;
+        }
+        }
+    .ico {
+        content: url("../../images/docker.png");
+        width: $size2;
+        height: $size2;
+    }
+    li {
+        list-style: none;
+        text-align: center;
+        line-height: 45px;
+        display: flex;
+        padding-right: 20px;
+        width: 80px;
+        a {
+            width: 80px;
+            border-radius: 4px;
+            background-color: #626060;
+            color: white;
+            text-decoration: none;
+        }
+        a:hover {
+            width: 80px;
+            border-top: 7px solid #b8dc14;
+            transition-duration: 0.3s;
+            cursor: pointer;
+        }
+    }
+}
