@@ -13,8 +13,8 @@ $size2: 50px;
     color: white;
     display: flex;
     position: relative;
-    background-color: #626060;
-    border-radius: 4px;
+    box-shadow: 10px 10px 5px #8287ff;
+    border-radius: 50px 15px;
     .box-icon {
         width: $size2;
         display: flex;
@@ -23,7 +23,7 @@ $size2: 50px;
         a {
             @extend %size-a;
         }
-        }
+    }
     .ico {
         content: url("../../images/docker.png");
         width: $size2;
@@ -39,15 +39,16 @@ $size2: 50px;
         a {
             width: 80px;
             border-radius: 4px;
-            background-color: #626060;
-            color: white;
+            color: #2f4962;
+            font-size: 17px;
             text-decoration: none;
         }
         a:hover {
             width: 80px;
-            border-top: 7px solid #b8dc14;
-            transition-duration: 0.3s;
+            border-top: 4px solid #868282;
+            transition-duration: 0.2s;
             cursor: pointer;
+            border-radius: 0;
         }
     }
 }

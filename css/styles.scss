@@ -1,14 +1,20 @@
 $size: 100%;
 html {
-    width: $size;
+    height: $size;
     font-family: 'Acme';
 }
-body { width: auto;
+body { position: relative;
     overflow-x: hidden;
+    min-height: $size;
+    margin: 0;
     header {
         width: $size;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        background-image: url('./../images/boy-working-on-concept-creatively.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     main { width: auto;}
     .container {

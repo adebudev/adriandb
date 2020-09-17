@@ -2,18 +2,10 @@
     padding: 30px;
     display: flex;
     .image {
-        justify-content: space-around;
-        display: flex;
-        img {
-            width: 50%;
-        }
+        @extend %image;
     }
     .text {
-        width: 100%;
-        h2 {
-            font-size: 50px;
-            margin: 10px;
-        }
+        @extend %text;
     }
 }
 
@@ -21,7 +13,6 @@
     @extend %size-a;
     flex-direction: column;
     .box-url-proj {
-        background-color: rgb(192, 189, 189);
         border-radius: 1rem;
         justify-content: center;
         display: flex;

@@ -1,14 +1,20 @@
 html {
-  width: 100%;
+  height: 100%;
   font-family: 'Acme'; }
 
 body {
-  width: auto;
-  overflow-x: hidden; }
+  position: relative;
+  overflow-x: hidden;
+  min-height: 100%;
+  margin: 0; }
   body header {
     width: 100%;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    background-image: url("./../images/boy-working-on-concept-creatively.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
   body main {
     width: auto; }
   body .container {
@@ -20,6 +26,52 @@ body {
     flex-direction: row;
     position: relative;
     background-color: #eeecec; }
+
+.button, .banner .pres-text button, .index-content .btn button {
+  width: 200px;
+  height: 40px;
+  border: 0;
+  font-family: 'Acme';
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #68e1fd;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #53afc5; }
+
+.index-content .box-content .box-image, .developer .image {
+  justify-content: space-around;
+  display: flex;
+  width: 50%; }
+  .index-content .box-content .box-image img, .developer .image img {
+    width: 70%; }
+
+.index-content .box-content .text, .developer .text {
+  width: 50%;
+  text-align: center; }
+  .index-content .box-content .text h2, .developer .text h2 {
+    font-size: 50px;
+    margin: 30px 30px 0 30px;
+    color: #6d6b7e; }
+  .index-content .box-content .text h3, .developer .text h3 {
+    font-size: 30px;
+    margin: 0px 30px 30px 30px;
+    color: #6d6b7e; }
+  .index-content .box-content .text span, .developer .text span {
+    color: #59bed6; }
+  .index-content .box-content .text p, .developer .text p {
+    font-size: 20px;
+    color: #6d6b7e; }
+
+.button {
+  border-radius: 4px;
+  width: 100px;
+  box-shadow: 5px 5px 5px grey; }
+
+.button:hover {
+  background-color: #68e1fd;
+  color: #fff; }
 
 @font-face {
   font-family: 'Acme';
@@ -57,6 +109,21 @@ body {
 .wdt-50 {
   width: 50px; }
 
+.marg-10 {
+  margin: 10px; }
+
+.marg-20 {
+  margin: 20px; }
+
+.marg-30 {
+  margin: 30px; }
+
+.marg-40 {
+  margin: 40px; }
+
+.marg-50 {
+  margin: 50px; }
+
 .banner {
   width: 100%; }
   .banner .pres-text {
@@ -68,35 +135,27 @@ body {
       width: 150px; }
     .banner .pres-text h1 {
       font-size: 40px;
-      color: #18ee8a; }
-    .banner .pres-text h1:hover {
-      color: #6ef59b;
-      display: block;
-      cursor: pointer; }
+      color: #68e1fd; }
     .banner .pres-text h2 {
       font-size: 30px;
-      color: #18ee8a; }
-    .banner .pres-text h2:hover {
-      color: #6ef59b;
-      display: block;
-      cursor: pointer; }
-    .banner .pres-text button {
-      width: 150px;
-      height: 35px;
-      border: 0;
-      font-family: 'Acme';
-      transition-duration: 0.4s;
-      cursor: pointer;
-      background-color: white;
-      border: 2px solid #18ee8a;
-      border-radius: 20px; }
+      color: #68e1fd; }
     .banner .pres-text button:hover {
-      background-color: #6ef59b;
+      background-color: #68e1fd;
       color: #fff; }
+
+.index-content .box-content {
+  display: flex; }
+.index-content .btn {
+  display: flex;
+  justify-content: center;
+  padding: 30px; }
+  .index-content .btn button:hover {
+    background-color: #68e1fd;
+    color: #fff; }
 
 .information {
   width: 100%;
-  border: 2px solid #18ee8a;
+  border: 2px solid #68e1fd;
   border-radius: 10px; }
   .information .box {
     margin: 10px; }
@@ -123,8 +182,8 @@ body {
   color: white;
   display: flex;
   position: relative;
-  background-color: #626060;
-  border-radius: 4px; }
+  box-shadow: 10px 10px 5px #8287ff;
+  border-radius: 50px 15px; }
   .nav .box-icon {
     width: 50px;
     display: flex;
@@ -144,14 +203,15 @@ body {
     .nav li a {
       width: 80px;
       border-radius: 4px;
-      background-color: #626060;
-      color: white;
+      color: #2f4962;
+      font-size: 17px;
       text-decoration: none; }
     .nav li a:hover {
       width: 80px;
-      border-top: 7px solid #b8dc14;
-      transition-duration: 0.3s;
-      cursor: pointer; }
+      border-top: 4px solid #868282;
+      transition-duration: 0.2s;
+      cursor: pointer;
+      border-radius: 0; }
 
 .background {
   background-color: #dddddd; }
@@ -212,21 +272,10 @@ body {
 .developer {
   padding: 30px;
   display: flex; }
-  .developer .image {
-    justify-content: space-around;
-    display: flex; }
-    .developer .image img {
-      width: 50%; }
-  .developer .text {
-    width: 100%; }
-    .developer .text h2 {
-      font-size: 50px;
-      margin: 10px; }
 
 .box-proj {
   flex-direction: column; }
   .box-proj .box-url-proj {
-    background-color: #c0bdbd;
     border-radius: 1rem;
     justify-content: center;
     display: flex;
@@ -247,16 +296,33 @@ body {
         display: inline-block; }
 
 .info-footer {
+  color: #ff4f03;
   width: 50%;
   display: inline-block;
   justify-content: center;
   text-align: center;
-  margin-left: 20px; }
+  margin: 20px; }
+  .info-footer p {
+    color: #e29a59; }
 
 .net-footer {
-  width: 50%;
-  display: flex; }
-  .net-footer img {
-    width: 50%; }
+  display: flex;
+  flex-direction: row;
+  width: 100%; }
+  .net-footer .net-developer img {
+    width: 100%; }
+  .net-footer .net {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .net-footer .net a {
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+      display: flex; }
+      .net-footer .net a img {
+        margin-bottom: 20px;
+        width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

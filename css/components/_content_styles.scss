@@ -1,6 +1,61 @@
 $size: 100%;
 $sizp: 20px;
-$color: rgb(24, 238, 138);
+$color: #68e1fd;;
+
+%button {
+    width: 200px;
+    height: 40px;
+    border: 0;
+    font-family: 'Acme';
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid $color;
+    border-radius: $sizp;
+    box-shadow: 5px 5px 5px #53afc5;
+}
+
+%image {
+    justify-content: space-around;
+    display: flex;
+    width: 50%;
+    img {
+        width: 70%;
+    }
+}
+%text {
+    width: 50%;
+    text-align: center;
+    h2 {
+        font-size: 50px;
+        margin: 30px 30px 0 30px;
+        color: #6d6b7e;
+    }
+    h3 {
+        font-size: 30px;
+        margin: 0px 30px 30px 30px;
+        color: #6d6b7e;
+    }
+    span {
+        color: #59bed6;
+    }
+    p {
+        font-size: 20px;
+        color: #6d6b7e;
+    }
+}
+.button {
+    @extend %button;
+    border-radius: 4px;
+    width: 100px;
+    box-shadow: 5px 5px 5px grey;
+}
+.button:hover {
+    background-color: #68e1fd;
+    color: #fff;
+    
+}
 
 @font-face {
     font-family: 'Acme';
@@ -20,7 +75,11 @@ $color: rgb(24, 238, 138);
         width: $i *10px;
     }
 }
-
+@for $i from 1 through 5 {
+    .marg-#{$i * 10} {
+        margin: $i * 10px;
+    }
+}
 .banner {
     width: $size;
     .pres-text {
@@ -35,37 +94,43 @@ $color: rgb(24, 238, 138);
             font-size: 40px;
             color: $color;
         }
-        h1:hover {
-            color: rgb(110, 245, 155);
-            display: block;
-            cursor: pointer;
-        }
         h2 {
             font-size: 30px;
             color: $color;
         }
-        h2:hover {
-            color: rgb(110, 245, 155);
-            display: block;
-            cursor: pointer;
-        }
         button {
-            width: 150px;
-            height: 35px;
-            border: 0;
-            font-family: 'Acme';
-            transition-duration: 0.4s;
-            cursor: pointer;
-            background-color: white;
-            border: 2px solid $color;
-            border-radius: $sizp;
+            @extend %button;
         }
         button:hover {
-            background-color: rgb(110, 245, 155);
+            background-color: #68e1fd;
             color: #fff;
         }
     }
 }
+.index-content {
+    .box-content {
+        display: flex;
+        .box-image {
+            @extend %image;
+        }
+        .text {
+            @extend %text;
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        button {
+            @extend %button;
+        }
+        button:hover {
+            background-color: #68e1fd;
+            color: #fff;
+        }
+    }
+}
+
 .information {
     width: $size;
     border: 2px solid $color;
