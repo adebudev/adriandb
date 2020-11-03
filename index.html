@@ -1,81 +1,524 @@
 <!DOCTYPE html>
-<html charset='es'>
-    <head>
-        <title>Inicio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link href="css/styles.css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="image.html">
-                    <img src="./images/profile/adrianlogo.png">
-                </a>
-            </div>
-            <ul class="nav">
-                <div class="box-icon"> 
-                    <a href="">
-                        <img src="./images/profile/logo.png">
-                    </a>
-                </div>
-                <li><a href="">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </header>
-        <main>
-        <div class="container">
-           <div class="index-content">
-               <div class="box-content">
-               <div class="text">
-                   <h2>
-                       <span>Adrian</span>
-                       De La Asuncion 
-                    </h2>
-                   <h3>
-                        Perfil 
-                       <span>Profesional</span>
-                    </h3>
-                   <p>Soy un Programador - Desarrollador Web FULL-STACK, con Tecnologias como el Lenguaje C, Python, JavaScript, Linux, MySQL...</p>
-               <p>Puedes Ver mis Proyetos Aqui >>> <button class="button">Projects</button></p>
-                </div>
-               <div class="box-image">
-                   <img src="./images/profile/developer.png" alt="developer">
-               </div>
-            </div>
-            <div class="btn">
-               <button>Curriculum</button>
-            </div>
-           </div>
-        </div>
-        </main>
-        <footer>
-            <div class="info-footer">
-                <h3>Informacion de Contacto</h3>
-                <h4>Numero Celular</h4>
-                <p>3013771875</p>
-                <h4>Correo</h4>
-                <p>delaasuncionbuelvasadrian@gmail.com</p>
-                <p>1550@holbertonschool.com</p>
-            </div>
-            <div class="net-footer">
-                <div class="net-developer cols-50">
-                    <img src="./images/profile/networks.svg" alt="networks">
-                </div>
-                <div class="net cols-50 marg-20">
-                    <h3>Sigueme</h3>
-                    <a href="https://github.com/AdrianDel07">
-                        <img src="./images/profile/github.svg" alt="github">
-                    </a>
-                    <a href="https://twitter.com/AdrianDeLaAsun1">
-                        <img src="./images/profile/twitter.svg" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/adrian-enrique-de-la-asuncion-buelvas-24645718a/">
-                        <img src="./images/profile/linkedin.svg" alt="github">
-                    </a>
-                </div> 
-            </div>
-        </footer>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel='stylesheet' href='https://res.cloudinary.com/dwnoneszt/raw/upload/v1486999708/bootstrap-grid.min_u0yxqj.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css'>
+<link rel='stylesheet' href='https://res.cloudinary.com/dwnoneszt/raw/upload/v1487028646/Fonts/Linea/styles.css'><link rel="stylesheet" href="./style.css">
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 
-    </body>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- preloader -->
+<div class="loader">
+	<div class="loader_image"></div>
+</div>
+
+<header>
+
+	<div class="main_head" id="home">
+		<div class="container" id='bootstrapWidth'>
+			<div class="row">
+				<div class="col-xs-12">
+
+					<div class="menu_wrapper">
+						<div class="logo_container">
+							<a href="#home">
+								<svg version="1.1" id="logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.283px" height="470.75px" viewBox="0 0 595.283 470.75" enable-background="new 0 0 595.283 470.75" xml:space="preserve">
+									<filter id="blur-filter" x="-2" y="-2" width="200" height="200">
+      							<feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    							</filter>
+									<path id="path3347" d="M147.543,302.779C66.072,210.313-0.321,133.703,0.001,132.539
+									c0.322-1.168,19.147-31.515,41.831-67.438L83.078-0.216l214.639,0.595l214.637,0.595l41.39,65.317
+									c22.764,35.924,41.455,66.033,41.541,66.906c0.084,0.873-56.707,65.951-126.201,144.631
+									c-69.496,78.674-136.299,154.33-148.449,168.118c-12.152,13.794-22.74,25.05-23.527,25.02
+									C296.317,470.929,229.017,395.245,147.543,302.779L147.543,302.779z M351.412,274.723c29.006-71.398,52.733-130.447,52.733-131.218
+									s-48.399-1.402-107.557-1.402c-85.138,0-107.302,0.611-106.338,2.916c0.67,1.604,23.458,57.502,50.64,124.219
+									c60.895,149.458,55.841,137.364,56.9,136.242C298.278,404.965,322.41,346.124,351.412,274.723L351.412,274.723z M215.651,272.115
+									l-52.893-130.01H98.759h-64l4.696,5.249c2.58,2.888,43.417,48.815,90.745,102.059c133.875,150.616,136.979,154.079,137.682,153.374
+									C268.245,402.423,244.742,343.621,215.651,272.115L215.651,272.115z M377.408,347.389c26.809-30.151,78.434-88.113,114.721-128.811
+									c36.289-40.693,65.979-74.567,65.979-75.27c0-0.705-28.506-0.999-63.346-0.658l-63.348,0.621l-53.002,130.149
+									c-29.152,71.586-52.271,129.844-51.371,129.469C327.935,402.516,350.603,377.541,377.408,347.389L377.408,347.389z
+									M156.487,116.882c-1.878-4.579-59.187-93.744-60.248-93.742c-1.106,0.007-51.265,78.24-57.827,90.19l-2.991,5.444h60.92
+									C129.849,118.777,156.914,117.927,156.487,116.882z M351.573,70.748c-28.94-26.413-53.885-47.526-55.428-46.908
+									c-2.455,0.978-84.13,74.229-99.562,89.295l-5.783,5.641h106.697h106.69L351.573,70.748z M529.633,70.813
+									c-24.59-38.6-31.111-47.369-33.41-44.906c-1.57,1.682-14.133,20.874-27.92,42.65c-13.787,21.774-26.633,41.983-28.549,44.906
+									l-3.482,5.312h61.963h61.957L529.633,70.813L529.633,70.813z M259.129,22.71c0.427-1.049-29.316-1.906-66.094-1.906
+									s-66.523,0.84-66.094,1.871c0.427,1.024,11.62,18.872,24.872,39.657l24.095,37.785l41.22-37.752
+									C239.802,41.603,258.701,23.758,259.129,22.71z M443.196,63.375c12.722-20.204,23.896-38.055,24.834-39.657
+									c1.353-2.302-12.297-2.916-65.108-2.916c-36.748,0-66.463,0.905-66.037,2.006c0.592,1.53,81.014,76.476,82.803,77.161
+									C419.897,100.051,430.476,83.584,443.196,63.375L443.196,63.375z"/>
+									<path id="glow" fill="none" stroke-width="2" stroke-miterlimit="10" stroke="#4dbeee" d="M147.543,302.779C66.072,210.313-0.321,133.703,0.001,132.539
+									c0.322-1.168,19.147-31.515,41.831-67.438L83.078-0.216l214.639,0.595l214.637,0.595l41.39,65.317
+									c22.764,35.924,41.455,66.033,41.541,66.906c0.084,0.873-56.707,65.951-126.201,144.631
+									c-69.496,78.674-136.299,154.33-148.449,168.118c-12.152,13.794-22.74,25.05-23.527,25.02
+									C296.317,470.929,229.017,395.245,147.543,302.779L147.543,302.779z M351.412,274.723c29.006-71.398,52.733-130.447,52.733-131.218
+									s-48.399-1.402-107.557-1.402c-85.138,0-107.302,0.611-106.338,2.916c0.67,1.604,23.458,57.502,50.64,124.219
+									c60.895,149.458,55.841,137.364,56.9,136.242C298.278,404.965,322.41,346.124,351.412,274.723L351.412,274.723z M215.651,272.115
+									l-52.893-130.01H98.759h-64l4.696,5.249c2.58,2.888,43.417,48.815,90.745,102.059c133.875,150.616,136.979,154.079,137.682,153.374
+									C268.245,402.423,244.742,343.621,215.651,272.115L215.651,272.115z M377.408,347.389c26.809-30.151,78.434-88.113,114.721-128.811
+									c36.289-40.693,65.979-74.567,65.979-75.27c0-0.705-28.506-0.999-63.346-0.658l-63.348,0.621l-53.002,130.149
+									c-29.152,71.586-52.271,129.844-51.371,129.469C327.935,402.516,350.603,377.541,377.408,347.389L377.408,347.389z
+									M156.487,116.882c-1.878-4.579-59.187-93.744-60.248-93.742c-1.106,0.007-51.265,78.24-57.827,90.19l-2.991,5.444h60.92
+									C129.849,118.777,156.914,117.927,156.487,116.882z M351.573,70.748c-28.94-26.413-53.885-47.526-55.428-46.908
+									c-2.455,0.978-84.13,74.229-99.562,89.295l-5.783,5.641h106.697h106.69L351.573,70.748z M529.633,70.813
+									c-24.59-38.6-31.111-47.369-33.41-44.906c-1.57,1.682-14.133,20.874-27.92,42.65c-13.787,21.774-26.633,41.983-28.549,44.906
+									l-3.482,5.312h61.963h61.957L529.633,70.813L529.633,70.813z M259.129,22.71c0.427-1.049-29.316-1.906-66.094-1.906
+									s-66.523,0.84-66.094,1.871c0.427,1.024,11.62,18.872,24.872,39.657l24.095,37.785l41.22-37.752
+									C239.802,41.603,258.701,23.758,259.129,22.71z M443.196,63.375c12.722-20.204,23.896-38.055,24.834-39.657
+									c1.353-2.302-12.297-2.916-65.108-2.916c-36.748,0-66.463,0.905-66.037,2.006c0.592,1.53,81.014,76.476,82.803,77.161
+									C419.897,100.051,430.476,83.584,443.196,63.375L443.196,63.375z"/>
+									</svg>
+							</a>
+						</div>
+						<!-- */logo_container -->
+						<button class="toggle_mnu">
+								<span class='sandwich'>
+									<span class='sw-topper'></span>
+									<span class='sw-bottom'></span>
+									<span class='sw-footer'></span>
+								</span>						
+							</button>
+					</div>
+					<!-- menu_wrapper -->
+
+					<nav class="top_mnu">
+						<ul>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#about">About myself</a></li>
+							<li><a href="#cv">CV</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#contacts">Contacts</a></li>
+						</ul>
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- */main_head -->
+
+	<div class="top_wrapper">
+		<div class="text_wrapper">
+			<h1>Adrian De La Asuncion</h1>
+			<p>Full-Stack Software Engineer</p>
+		</div>
+	</div>
+
+</header>
+
+<!-- SECTION ABOUT ME -->
+<section id="about" class="about bg_light">
+
+	<div class="section_header">
+		<h2>About me</h2>
+		<div class="section_descr_wrapper">
+			<div class="section_descr">Let's get acquainted</div>
+		</div>
+	</div>
+
+	<div class="section_content">
+		<div class="container">
+			<div class="row">
+
+				<!-- PHOTO -->
+				<div class="col-md-4 col-md-push-4 animation_center">
+					<h3>Photo</h3>
+					<div class="photo_wrapper">
+						<a href="" class="pop_up" id="avatar_a">
+							<img id="avatar_img" src="https://media-exp1.licdn.com/dms/image/C4D03AQHF1NNlyhGVaw/profile-displayphoto-shrink_200_200/0?e=1609977600&v=beta&t=vobYC3cqr_mA70l_AHtA0LHV1E6SuqJmSuo6Tcsw6dU" alt="myphoto">
+						</a>
+					</div>
+				</div>
+				<!-- */col -->
+				<!-- */PHOTO -->
+
+				<div class="col-md-4 col-md-pull-4 animation_left">
+					<h3>A Little bit about me</h3>
+					<p>Full-Stack Software Engineer, passionate about technology and the desire to continue learning and improving, with experience in programming languages such as: Python, C, Php, in Frameworks: Django, Flask, React, Vue, and Design: HTML, Css, Sass...</p>
+					<p>Ingeniero de Software Full-Stack, apasionado por la tecnología y con ganas de seguir aprendiendo y mejorando, con experiencia en lenguajes de programación como: Python, C, Php, en Frameworks: Django, Flask, React, Vue, y Diseño: HTML, Css, Hablar con descaro a...</p>
+				</div>
+				<!-- */col -->
+
+				<div class="col-md-4 animation_right">
+					<h3>Personal info</h3>
+					<h2 class="personal_header">Adrian De La Asuncion Buelvas</h2>
+					<ul>
+						<li>Full-Stack Software Engineer</li>
+						<li>Programming Software</li>
+						<li>HTML to WordPress</li>
+						<li>+57 3013771875</li>
+						<li>delaasuncionbuelvasadrian@gmail.com</li>
+					</ul>
+					<div class="social_wrap">
+						<ul>
+							<li><a href="https://www.linkedin.com/in/adriandelaasuncionbuelvas/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://github.com/AdrianDel07" target="_blank"><i class="fa fa-github"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- */col -->
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- SECTION CV -->
+<section id="cv" class="cv">
+
+	<div class="section_header">
+		<h2>CV</h2>
+		<div class="section_descr_wrapper">
+			<div class="section_descr">My experience and skills</div>
+		</div>
+	</div>
+
+	<div class="section_content">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6 left">
+					<h3>Study</h3>
+					<div class="icon"><i class="icon-basic-spread-text"></i></div>
+
+					<div class="item">
+						<div class="year">2020-2020</div>
+						<div class="details">
+							<span>Software Engineer <strong>Holberton School</strong></span>
+							<p>Holberton is a School of Computer Science and Software Development founded in Silicon Valley... The Program focus on fundamentals of Computer Science and Software Development, including Linux, Data Structure, Algorithms, Low Level Programming, High Level Programming, Databases, APIs and DevOps.</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="year">2018-2018</div>
+						<div class="details">
+							<span>Programacion de Software <strong>Servicio Nacional de Aprendizaje (SENA)</strong></span>
+							<p> Programacion de Software aprendes lo básico y como comenzar en este campo de el Software, con tecnologías como: Php, Java, Html, JavaScript.</p>
+						</div>
+					</div>
+
+				</div>
+				<!-- */col left -->
+
+				<div class="col-md-6 right">
+					<h3>Work</h3>
+					<div class="icon"><i class="icon-basic-display"></i></div>
+
+					<div class="item">
+						<div class="year">2020-2020</div>
+						<div class="details">
+							<span><strong>Software Engineer </strong>Independent</span>
+							<p>
+                                <strong>RecipEAT </strong>
+                                Application that Helps you find Recipes only with the ingredientes You have on hand.
+                                Technologies:
+                                <p>• React: React was used to improve the user experience and quick access to information by using components.</p>
+                                <p>• Sass: to improve the order of the styles of each component.</p>
+                                <p>• Serveless: to improve the use and optimization of the application.</p>
+                                <p>• AWS: to be more optimal the application.</p>
+                            </p>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="year">2020-2020</div>
+						<div class="details">
+							<span><strong>Software Engineer </strong>Holberton School</span>
+							<p>
+                                <strong>Project:</strong>
+                                <p>• Printf: The creation of an enhancement version of the printf function
+                                    included in the C standard library. Built with C.</p>
+                                <p>• Simple Shell: The creation of a simple version of the shell that comes
+                                    by default in Linux systems (bash). Built with C.</p>
+                                <p>• Environment Config: bash script for check if linux have developer
+                                    tools, if not the user can be select and install easy.</p>
+                                <p>• AirBnB-clone: The creation of a clone of the Airbnb web application
+                                    recognized for vacation rentals. Divided by the following projects:
+                                    - Web dynamic for show content from database (made with Python,
+                                    Flask, JQuery, CSS, Html)
+                                    - Storage Engine and database for Web Applications (made with
+                                    Python, SQLAlchemy, MySQL).
+                                    - API Rest Full for the different services in the web app(made in Python
+                                    and Flask)
+                                    - Interface CLI for show, create, update and delete element for
+                                    Database in real time(made in Python, SQLAlchemy ad MySQL)</p>
+                                
+                            </p>
+						</div>
+					</div>
+
+				</div>
+				<!-- /*col right-->
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- SECTION PORTFOLIO -->
+<section id="portfolio" class="portfolio bg_dark">
+	<div class="section_header">
+		<h2>Portfolio</h2>
+		<div class="section_descr_wrapper">
+			<div class="section_descr">My latest web-sites/apps</div>
+		</div>
+	</div>
+	<div class="section_content">
+		<div class="container">
+			<div class="row">
+
+				<div class="filter_div controls">
+					<ul>
+						<li class="filter active" data-filter="all">All projects</li>
+						<li class="filter" data-filter=".category_1">React projects</li>
+						<li class="filter" data-filter=".category_2">Landing Pages projects</li>
+						<li class="filter" data-filter=".category_3">Python</li>
+					</ul>
+				</div>
+
+				<div id="portfolio_grid">
+
+					<!-- PORTFOLIO ITEM -->
+					<div class="mix col-xs-6 col-sm-6 col-md-3 portfolio_item category_1">
+
+						<img class="img_portfolio1" src="https://i.imgur.com/SiJtk8r.png" alt="RecipEAT" />
+						<div class="details">
+							<h3>RecipEAT</h3>
+							<p>Work details</p>
+							<a href="#" class="pop_details">More</a>
+						</div>
+
+						<div class="hidden">
+							<div class="more">
+								<h3>RecipEAT</h3>
+								<p>Application that Helps you find Recipes only with the ingredientes You have on hand. Technologies:
+                                    React, Sass, Serveless, AWS, Firebase.
+                                </p>
+								<img class="img_portfolio1" src="https://i.imgur.com/SiJtk8r.png" alt="RecipEAT" />
+							</div>
+						</div>
+
+					</div>
+					<!-- */portfolio_item -->
+
+					<!-- PORTFOLIO ITEM -->
+					<div class="mix col-xs-6  col-sm-6 col-md-3 portfolio_item">
+
+						<img class="img_portfolio2" src="https://i.imgur.com/wBezIc8.png" alt="Alt" />
+						<div class="details">
+							<h3>Simple Shell</h3>
+							<p>Work details</p>
+							<a href="#" class="pop_details">More</a>
+						</div>
+
+						<div class="hidden">
+							<div class="more">
+								<h3>Simple Shell</h3>
+								<p>In this project, the C language was used, Malloc was used to save data in memory, environment variables were used, system functions were used, also Environment Variables.</p>
+								<img class="img_portfolio2" src="https://i.imgur.com/wBezIc8.png" alt="Alt" />
+							</div>
+						</div>
+
+					</div>
+
+					<!-- PORTFOLIO ITEM -->
+					<div class="mix col-xs-6 col-sm-6 col-md-3 portfolio_item category_2">
+
+						<img class="img_portfolio4" src="https://i.imgur.com/OsxF5C2.png" alt="Alt" />
+						<div class="details">
+							<h3>Disegn Page 404</h3>
+							<p>Work details</p>
+							<a href="#" class="pop_details">More</a>
+						</div>
+
+						<div class="hidden">
+							<div class="more">
+								<h3>Disegn Page 404</h3>
+								<p>This is a small design of a 404 redirect page, it was created with pure CSS, It is managed with FlexBox... Disegn Responsive</p>
+								<img class="img_portfolio4" src="https://i.imgur.com/OsxF5C2.png" alt="Alt" />
+							</div>
+						</div>
+
+					</div>
+
+					<!-- PORTFOLIO ITEM -->
+					<div class="mix col-xs-6 col-sm-6 col-md-3 portfolio_item category_2">
+
+						<img class="img_portfolio5" src="https://i.imgur.com/6xyXOys.gif" alt="RecipEAT_landinPage" />
+						<div class="details">
+							<h3>RecipEAT Landing Page</h3>
+							<p>Work details</p>
+							<a href="#" class="pop_details">More</a>
+						</div>
+
+						<div class="hidden">
+							<div class="more">
+								<h3>RecipEAT Landing Page</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+								<img class="img_portfolio5" src="https://i.imgur.com/6xyXOys.gif" alt="RecipEAT_landinPage" />
+							</div>
+						</div>
+
+					</div>
+
+					<!-- PORTFOLIO ITEM -->
+					<div class="mix col-xs-6 col-sm-6 col-md-3 portfolio_item category_3">
+
+						<img class="img_portfolio6" src="https://i.imgur.com/GTtvrjd.png" alt="AirBnB" />
+						<div class="details">
+							<h3>Airbnb Clone</h3>
+							<p>Work details</p>
+							<a href="#" class="pop_details">More</a>
+						</div>
+
+						<div class="hidden">
+							<div class="more">
+								<h3>Project title</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum cupiditate, dignissimos quo. Dolore, omnis totam quibusdam voluptatibus cum, nulla dolores sunt iste? Sunt nam illum, animi magni veniam adipisci non.</p>
+								<img class="img_portfolio6" src="https://i.imgur.com/GTtvrjd.png" alt="AirBnB" />
+							</div>
+						</div>
+
+					</div>
+
+				<!-- */portfolio_grid -->
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<!-- SECTION CONTACTS -->
+<section id="contacts" class="contacts bg_light">
+	<div class="section_header">
+		<h2>Contacts</h2>
+		<div class="section_descr_wrapper">
+			<div class="section_descr">Leave your message</div>
+		</div>
+	</div>
+	<div class="section_content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+
+					<div class="contact_box">
+						<div class="icon"><i class="icon-basic-geolocalize-05"></i></div>
+						<h3>Address</h3>
+						<p>Barranquilla, Colombia</p>
+					</div>
+
+					<div class="contact_box">
+						<div class="icon"><i class="icon-basic-smartphone"></i></div>
+						<h3>Phone</h3>
+						<p>+57 3013771875</p>
+					</div>
+
+					<div class="contact_box">
+						<div class="icon"><i class="icon-basic-webpage-img-txt"></i></div>
+						<h3>E-mail</h3>
+						<a href="mailto:chmpain@gmail.com?Subject=Hello%20">delaasuncionbuelvasadrian@gmail.com</a>
+					</div>
+				</div>
+				<!-- */col -->
+
+				<div class="col-md-6">
+					<form class="main_form" action="https://send.pageclip.co/9g3HDY26PWQt8wurDDFIr5zZck8ipoh3/contact-form" method="post">
+						<label class="form-group">
+								<span class="color_element">*</span> Your Name:
+								<input 
+								type="text" 
+								name="name" 
+								placeholder="Your Name" 
+								data-validation-required-message="Please enter Your Name" 
+								required/>
+								<span class="help-block text-danger"></span>
+							</label>
+						<label class="form-group">
+								<span class="color_element">*</span> Your E-mail:
+								<input 
+								type="email" 
+								name="email" 
+								placeholder="Your E-mail"
+								data-validation-email-message="The E-mail should contain '@' and mail server domain name, for example - 'gmail.com' "
+								data-validation-required-message="Please enter your E-mail"
+								required/>
+								<span class="help-block text-danger"></span>
+							</label>
+						<label class="form-group">
+								<span class="color_element">*</span> Your phone:
+								<input 
+								type="tel"
+								id="phone"
+								name="phone"
+								data-validation-pattern-message="Please enter a correct 10-digit number"
+								data-validation-required-message="Please enter your phone number"
+								required />
+								<span class="help-block text-danger"></span>
+							</label>
+						<label class="form-group">
+								<span class="color_element">*</span> Your message:
+								<textarea	
+								rows="5" 
+								name="message"
+								placeholder="Your message" 
+								data-validation-required-message="Please enter your Message" 
+								required></textarea>
+								<span class="help-block text-danger"></span>
+							</label>
+						<button>Send</button>
+                    </form>
+				</div>
+				<!-- */col -->
+
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<footer class="main_footer bg_dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer_wrapper">
+
+					<div class="left">
+						&copy;2020 Adrian De La Asuncion Buelvas
+					</div>
+					<div class="up_button">
+						<p><a href="#home" data-tooltip="Scroll to top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></a></p>
+					</div>
+					<div class="social_wrap">
+						<ul>
+							<li><a href="https://www.linkedin.com/in/adriandelaasuncionbuelvas/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://github.com/AdrianDel07" target="_blank"><i class="fa fa-github"></i></a></li>
+						</ul>
+					</div>
+
+				</div>
+				<!-- */footer_wrapper -->
+			</div>
+			<!-- */col -->
+		</div>
+	</div>
+</footer>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+<script src='https://res.cloudinary.com/dwnoneszt/raw/upload/v1487027547/waypoints.min_bklk0y.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script>
+<script src='https://res.cloudinary.com/dwnoneszt/raw/upload/v1486999498/parallax.min_ttyve7.js'></script>
+<script src='https://res.cloudinary.com/dwnoneszt/raw/upload/v1486999247/jquery.malihu.PageScroll2id.min_jv3vns.js'></script>
+<script src='https://res.cloudinary.com/dwnoneszt/raw/upload/v1487027434/animate-css_gojafo.js'></script><script  src="./script.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+
+</body>
 </html>
