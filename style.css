@@ -431,11 +431,13 @@ section.portfolio .section_content ul {
 section.portfolio .section_content .mix {
   display: none;
 }
+@media only screen and(max-width: 1024px){
 section.portfolio .section_content #portfolio_grid {
   display: -webkit-flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: flex-start;
+}
 }
 section.portfolio .section_content .portfolio_item {
   position: relative;
@@ -828,4 +830,24 @@ header .toggle_mnu {
 .top_wrapper .text_wrapper p {
   color: #FAFAFA;
   letter-spacing: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  #portfolio_grid {
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+  }
+} 
+
+@media only screen and (max-width: 768px) {
+  #portfolio_grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-xs-6 {
+    width: 100%;
+  }
 }
