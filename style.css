@@ -832,6 +832,27 @@ header .toggle_mnu {
   letter-spacing: 5px;
 }
 
+.box-btn-cv {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  text-decoration: none;
+}
+.btn-cv{
+  background-color: #FF6347;
+  color: #FAFAFA;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 2rem;
+  text-decoration-style: none;
+}
+
+.github_project_URL li {
+  font-size: 30px;
+  list-style: none;
+}
+.github_project_URL ul {
+  padding: 0;
+}
 @media only screen and (min-width: 768px) {
 
   #portfolio_grid {
@@ -839,6 +860,11 @@ header .toggle_mnu {
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: flex-start;
+  }
+  .btn-cv:hover {
+    color: #FAFAFA;  
+    text-decoration-style: none;
+    transform: scale(1.05);
   }
 } 
 
