@@ -74,7 +74,7 @@ $(function() {
 
 	//creates id's for project items and links for Magnific popup
 	$(".portfolio_item").each(function(i) {
-		$(this).find("a").attr("href", "#proj" + i);
+		$(this).find("#more").attr("href", "#proj" + i);
 		$(this).find(".more").attr("id", "proj" + i);
 	});
 
