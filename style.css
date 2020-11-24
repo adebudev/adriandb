@@ -853,6 +853,9 @@ header .toggle_mnu {
 .github_project_URL ul {
   padding: 0;
 }
+.red_project {
+  border-bottom: 2px solid #FF6347;
+}
 @media only screen and (min-width: 768px) {
 
   #portfolio_grid {

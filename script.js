@@ -180,7 +180,7 @@ $(function() {
 	//=====================================
 	// https://pixelcog.github.io/parallax.js/
 	$('.main_head').parallax({
-		imageSrc: 'https://res.cloudinary.com/dwnoneszt/image/upload/v1486998737/PortfolioLanding/bg1.jpg',
+		imageSrc: './assets/img/fondo.png',
 		parallax: "scroll",
 		zIndex: 1,
 		position: "top center"
